@@ -1,4 +1,4 @@
-# chai aur backend  series 
+<!-- # chai aur backend  series 
 
 This is a video series on backend with javascript
 - [Model link](https://app.eraser.io/workspace/YtPqZ1VogxGy1jzIDkzj?origin=share)
@@ -21,4 +21,68 @@ Top Contributer to complete all TODOs
 --- 
 ## How to contribute in this open source Project
 
-First, please understand that this is not your regular project to merge your PR. This repo requires you to finish all assignments that are in controller folder. We don't accept half work, please finish all controllers and then reach us out on [Discord](https://hitesh.ai/discord) or [Twitter](https://twitter.com/@hiteshdotcom) and after checking your repo, I will add link to your repo in this readme.
+First, please understand that this is not your regular project to merge your PR. This repo requires you to finish all assignments that are in controller folder. We don't accept half work, please finish all controllers and then reach us out on [Discord](https://hitesh.ai/discord) or [Twitter](https://twitter.com/@hiteshdotcom) and after checking your repo, I will add link to your repo in this readme. -->
+
+# ☕ Chai aur Backend Series
+
+Welcome to the **Chai aur Backend** series — a complete and production-grade backend development course using modern JavaScript technologies. This project is a part of an in-depth video tutorial that covers everything from basics to advanced backend engineering practices.
+
+---
+
+## 📺 Watch the Full Series
+
+- 🔗 **[Video Playlist](https://www.youtube.com/watch?v=EH3vGeqeIAo&list=PLu71SKxNbfoBGh_8p_NS-ZAh6v7HhYqHW)**  
+  Step-by-step tutorials to build and understand a full backend system from scratch.
+
+- 🧠 **[Eraser Whiteboard Model](https://app.eraser.io/workspace/YtPqZ1VogxGy1jzIDkzj?origin=share)**  
+  Visual explanation and planning of backend architecture.
+
+---
+
+## 🧰 Tech Stack
+
+This project uses the following tools and libraries:
+
+- **Node.js** – JavaScript runtime
+- **Express.js** – Web framework
+- **MongoDB** – NoSQL database
+- **Mongoose** – MongoDB ODM for schema modeling
+- **JWT (JSON Web Tokens)** – Authentication (Access + Refresh Tokens)
+- **bcrypt** – Password hashing
+- **dotenv** – Environment variable management
+- **Multer** – File uploads
+- **Cloudinary** – Media storage and delivery
+- **Nodemon** – Development server auto-reload
+- **CORS** – Cross-Origin Resource Sharing support
+
+---
+
+## 📦 Features Covered
+
+We are building a complete **video hosting backend** (similar to YouTube) which includes:
+
+- ✅ User Authentication
+  - Sign Up
+  - Login
+  - Secure password storage using **bcrypt**
+  - Access + Refresh token-based authentication using **JWT**
+- ✅ User Authorization with middleware
+- ✅ Video Management
+  - Upload video
+  - Stream video
+  - Like, dislike, comment, and reply system
+  - Subscriptions and notifications
+- ✅ Comment System with nesting (replies)
+- ✅ Media handling using **Multer** and **Cloudinary**
+- ✅ Secure routes with token validation
+- ✅ Rate limiting and error handling
+- ✅ Environment variable support with `.env`
+- ✅ Organized folder structure with MVC pattern
+- ✅ Best practices followed for clean and maintainable code
+
+---
+
+## 🧑‍💻 How to Run the Project Locally
+
+### 1️⃣ Clone the repository
+
