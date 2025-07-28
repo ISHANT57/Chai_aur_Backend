@@ -3,19 +3,6 @@ const asyncHandler = (requestHandler) => (req, res, next) => {
 };
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // const asyncHandler =(controller) => async (req, res, next) => {
 //     try {
 //         await controller(req, res, next)
@@ -28,5 +15,6 @@ const asyncHandler = (requestHandler) => (req, res, next) => {
         
 //     }
 // }
+// export default asyncHandler
 
 export {asyncHandler}
