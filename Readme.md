@@ -1,88 +1,156 @@
-<!-- # chai aur backend  series 
-
-This is a video series on backend with javascript
-- [Model link](https://app.eraser.io/workspace/YtPqZ1VogxGy1jzIDkzj?origin=share)
-
-- [Video playlist](https://www.youtube.com/watch?v=EH3vGeqeIAo&list=PLu71SKxNbfoBGh_8p_NS-ZAh6v7HhYqHW)
-
----
-# Summary of this project
-
-This project is a complex backend project that is built with nodejs, expressjs, mongodb, mongoose, jwt, bcrypt, and many more. This project is a complete backend project that has all the features that a backend project should have.
-We are building a complete video hosting website similar to youtube with all the features like login, signup, upload video, like, dislike, comment, reply, subscribe, unsubscribe, and many more.
-
-Project uses all standard practices like JWT, bcrypt, access tokens, refresh Tokens and many more. We have spent a lot of time in building this project and we are sure that you will learn a lot from this project.
-
----
-Top Contributer to complete all TODOs
-
-1. Spiderman (just sample)  [Link to Repo](https://www.youtube.com/@chaiaurcode)
-
---- 
-## How to contribute in this open source Project
-
-First, please understand that this is not your regular project to merge your PR. This repo requires you to finish all assignments that are in controller folder. We don't accept half work, please finish all controllers and then reach us out on [Discord](https://hitesh.ai/discord) or [Twitter](https://twitter.com/@hiteshdotcom) and after checking your repo, I will add link to your repo in this readme. -->
 
 # ☕ Chai aur Backend Series
 
-Welcome to the **Chai aur Backend** series — a complete and production-grade backend development course using modern JavaScript technologies. This project is a part of an in-depth video tutorial that covers everything from basics to advanced backend engineering practices.
+Welcome to the **Chai aur Backend** series — a complete, production-grade backend development project crafted using modern JavaScript technologies. This series is a part of the [Chai aur Code](https://www.youtube.com/@chaiaurcode) ecosystem and aims to teach you **how to build a real-world video hosting backend system** (just like YouTube) from scratch.
 
 ---
 
 ## 📺 Watch the Full Series
 
-- 🔗 **[Video Playlist](https://www.youtube.com/watch?v=EH3vGeqeIAo&list=PLu71SKxNbfoBGh_8p_NS-ZAh6v7HhYqHW)**  
-  Step-by-step tutorials to build and understand a full backend system from scratch.
+- 🎥 **[YouTube Playlist](https://www.youtube.com/watch?v=EH3vGeqeIAo&list=PLu71SKxNbfoBGh_8p_NS-ZAh6v7HhYqHW)**  
+  A step-by-step video series to help you build and understand every part of a backend system.
 
-- 🧠 **[Eraser Whiteboard Model](https://app.eraser.io/workspace/YtPqZ1VogxGy1jzIDkzj?origin=share)**  
-  Visual explanation and planning of backend architecture.
+- 🧠 **[Architecture Whiteboard (Eraser Board)](https://app.eraser.io/workspace/YtPqZ1VogxGy1jzIDkzj?origin=share)**  
+  Visual diagrams and architectural plans to understand how everything fits together.
 
 ---
 
 ## 🧰 Tech Stack
 
-This project uses the following tools and libraries:
+This project is built using the following technologies:
 
-- **Node.js** – JavaScript runtime
-- **Express.js** – Web framework
+- **Node.js** – Runtime environment for JavaScript
+- **Express.js** – Fast and minimalist web framework
 - **MongoDB** – NoSQL database
-- **Mongoose** – MongoDB ODM for schema modeling
-- **JWT (JSON Web Tokens)** – Authentication (Access + Refresh Tokens)
-- **bcrypt** – Password hashing
-- **dotenv** – Environment variable management
-- **Multer** – File uploads
-- **Cloudinary** – Media storage and delivery
-- **Nodemon** – Development server auto-reload
-- **CORS** – Cross-Origin Resource Sharing support
+- **Mongoose** – Object Data Modeling (ODM) for MongoDB
+- **JWT** – Secure user authentication using access and refresh tokens
+- **bcrypt** – Secure password hashing
+- **dotenv** – Manage environment variables
+- **Multer** – File upload handling (multipart/form-data)
+- **Cloudinary** – Media storage and optimization
+- **Nodemon** – Development auto-reloader
+- **CORS** – Handle Cross-Origin Resource Sharing
 
 ---
 
-## 📦 Features Covered
+## 🔐 Features
 
-We are building a complete **video hosting backend** (similar to YouTube) which includes:
+This is a **full-fledged video hosting backend**, built with security, scalability, and real-world features in mind:
 
-- ✅ User Authentication
-  - Sign Up
-  - Login
-  - Secure password storage using **bcrypt**
-  - Access + Refresh token-based authentication using **JWT**
-- ✅ User Authorization with middleware
-- ✅ Video Management
-  - Upload video
-  - Stream video
-  - Like, dislike, comment, and reply system
-  - Subscriptions and notifications
-- ✅ Comment System with nesting (replies)
-- ✅ Media handling using **Multer** and **Cloudinary**
-- ✅ Secure routes with token validation
-- ✅ Rate limiting and error handling
-- ✅ Environment variable support with `.env`
-- ✅ Organized folder structure with MVC pattern
-- ✅ Best practices followed for clean and maintainable code
+### 👤 User System
+- User Sign Up and Login
+- Password hashing with **bcrypt**
+- JWT-based access and refresh token authentication
+- Role-based authorization using middleware
+
+### 📹 Video Management
+- Upload, stream, update, and delete videos
+- Video views tracking
+- Like / Dislike system
+
+### 💬 Comment System
+- Add comments and nested replies
+- Like / Dislike comments
+- Delete comments and replies
+
+### 📢 Subscriptions
+- Subscribe / Unsubscribe to other users
+- Get notifications for new content (conceptual)
+
+### ☁️ File & Media Handling
+- Upload thumbnails, profile pictures, and videos using **Multer**
+- Upload and manage files via **Cloudinary**
+
+### 🚧 Security & Utilities
+- Authentication & Authorization middleware
+- Rate limiting & error handling
+- Secure route protection
+- Environment variable support using `.env`
+- Clean code using **MVC** architecture
 
 ---
 
-## 🧑‍💻 How to Run the Project Locally
+## 📁 Project Structure
 
-### 1️⃣ Clone the repository
+```
+chai-backend/
+├── .github/              # GitHub workflows & actions
+├── public/               # Static files
+│   └── temp/             # Temporary file storage
+├── src/                  # Main application source
+│   ├── app.js            # Express configuration
+│   ├── index.js          # Entry point
+│   ├── constants.js      # Constant values
+│   ├── db/               # MongoDB connection logic
+│   ├── controllers/      # Core business logic
+│   ├── models/           # Mongoose schemas
+│   ├── routes/           # Express routes
+│   ├── middlewares/      # Middleware for auth, error handling, etc.
+│   └── utils/            # Helper utilities
+├── .env.sample           # Sample .env file
+├── .gitignore            # Files to ignore in git
+├── .dockerignore         # Docker ignore list
+├── Dockerfile            # Docker setup
+├── package.json          # NPM scripts & dependencies
+├── pnpm-lock.yaml        # PNPM lockfile
+└── README.md             # Project documentation
+```
 
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/chai-backend.git
+cd chai-backend
+```
+
+### 2. Install dependencies
+
+```bash
+pnpm install  # or npm install
+```
+
+### 3. Configure environment variables
+
+Create a `.env` file based on `.env.sample`:
+
+```bash
+cp .env.sample .env
+```
+
+Update with your MongoDB URI, JWT secrets, Cloudinary credentials, etc.
+
+### 4. Run the project
+
+```bash
+pnpm dev  # or npm run dev
+```
+
+Your server should now be running on `http://localhost:8000`
+
+---
+
+## 🧠 Learning Objectives
+
+By working on this project, you will learn:
+
+- How to structure large-scale backend projects
+- Real-world authentication and session management
+- How to use cloud services for media
+- API architecture and RESTful design
+- Clean code and MVC architecture principles
+- How to manage file uploads securely
+
+---
+
+## 📄 License
+
+This project is under the [MIT License](LICENSE). Use it for learning, not for cloning in production.
+
+---
+
+Happy Coding! 🚀  
+*Built with ❤️ in the Chai aur Code community*
