@@ -81,8 +81,27 @@ We are building a complete **video hosting backend** (similar to YouTube) which 
 - ✅ Best practices followed for clean and maintainable code
 
 ---
+Project Structure
 
-## 🧑‍💻 How to Run the Project Locally
-
-### 1️⃣ Clone the repository
+├── .github/              # GitHub-specific files (e.g., workflows)
+├── public/               # Static files
+│   └── temp/
+├── src/                  # Main source code
+│   ├── constants.js      # Project-wide constants
+│   ├── app.js            # Express app configuration
+│   ├── db/               # Database connection logic
+│   │   └── index.js
+│   ├── controllers/      # Request handlers and business logic
+│   ├── middlewares/      # Custom Express middlewares
+│   ├── models/           # Mongoose data models
+│   ├── routes/           # API route definitions
+│   ├── utils/            # Utility functions and classes
+│   └── index.js          # Application entry point
+├── .dockerignore         # Docker ignore file
+├── .env.sample           # Sample environment variables
+├── .gitignore            # Git ignore file
+├── Dockerfile            # Docker configuration
+├── package.json          # Project dependencies and scripts
+├── pnpm-lock.yaml        # PNPM lock file
+└── README.md             # You are here!
 
